@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #181818;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.digiclock {
+  background: #181818;
+  box-shadow: 0px 4px 70px #0000006e;
+  padding: 30px 40px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.digiclock::after {
+  position: absolute;
+  content: " ";
+  background: #ffba07;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  z-index: -1;
+  top: -60px;
+  right: -50px;
+  transform: rotate(45deg);
+}
+
+.time {
+  font-size: 50px;
+}
+
+.time span {
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.day .ampm {
+  background: #2a2517;
+  padding: 3px 7px;
+  border-radius: 10px;
+  font-size: 17px;
+  color: #ffba07;
+}
+
+.day .Week {
+  font-size: 18px;
+}
